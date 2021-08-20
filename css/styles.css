@@ -1,5 +1,16 @@
 
 /* --------------var--------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -7,9 +18,30 @@
   --primary-white-color: #ffffff;
 }
 
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -54,11 +86,24 @@ body {
   text-align: center;
 }
 
+.container {
+  width: 1230px;
+  outline: 1px solid;
+}
+
 /* ----------------index.html---------------------- */
 
 /* ---------------header------------------------- */
 .header {
   background-color: var(--primary-white-color)
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-list {
+  padding: 0;
 }
 
 .header-item {
@@ -103,6 +148,11 @@ body {
 }
 
 /* ------------------main--------------------- */
+
+.first-section-list {
+  padding-left: 0;
+}
+
 .first-section-heading {
   font-weight: 700;
   font-size: 14px;
@@ -126,11 +176,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.second-section-list {
+  padding-left: 0;
+}
+
 .team-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.team-list {
+  padding-left: 0;
 }
 
 .team-item-heading {
