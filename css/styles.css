@@ -285,15 +285,24 @@ img {
 }
 
 .footer-logo {
+  display: block;
+  padding-top: 60px;
   color: var(--primary-white-color);
 }
 
 .footer-address {
+  display: block;
+  margin-top: 20px;
+
   color: var(--primary-white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-mail-tel {
+  display: block;
 }
 
 .footer-mail,
@@ -303,6 +312,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.footer-mail {
+  padding-top: 9px;
+}
+
+.footer-tel {
+  padding-top: 9px;
 }
 
 /* ---------------------portfolio.html-------------------- */
