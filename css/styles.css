@@ -1,4 +1,3 @@
-
 /* --------------var--------------- */
 
 html {
@@ -14,10 +13,9 @@ html {
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-  --accent-color: #2196F3fb;
+  --accent-color: #2196f3fb;
   --primary-white-color: #ffffff;
 }
-
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -35,7 +33,9 @@ p {
 }
 
 ul {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -67,12 +67,12 @@ img {
   color: var(--primary-text-color);
 }
 
-.link:hover, 
+.link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 
-.btn:hover, 
+.btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -86,36 +86,64 @@ img {
   text-align: center;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1230px;
-  outline: 1px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* ----------------index.html---------------------- */
 
 /* ---------------header------------------------- */
 .header {
-  background-color: var(--primary-white-color)
+  background-color: var(--primary-white-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-list {
-  padding: 0;
+  display: flex;
+  margin-left: 50px;
 }
 
 .header-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
 }
 
-.header-mail, 
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-mail,
 .header-tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -123,8 +151,28 @@ img {
   letter-spacing: 0.02em;
 }
 
+.header-mail-tel {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-mail-tel .header-mail-tel-list + .header-mail-tel-list {
+  margin-left: 50px;
+}
+
+.header-mail {
+  display: block;
+}
+
+.header-tel {
+  display: block;
+}
+
+/* --------------HERO------------------ */
 .hero {
-  background-color: #2F303A;
+  background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-heading {
@@ -132,25 +180,32 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .hero-btn {
+  margin-top: 30px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  border-radius: 4px;
 }
 
 /* ------------------main--------------------- */
 
 .first-section-list {
+  display: flex;
   padding-left: 0;
+}
+
+.first-section-item:not(:last-child) {
+  margin-left: 30px;
 }
 
 .first-section-heading {
@@ -159,15 +214,16 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}  
+}
 
 .first-section-paragraph {
+  margin-top: 10px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
 
 .second-section-heading {
   font-weight: 700;
@@ -177,7 +233,18 @@ img {
 }
 
 .second-section-list {
+  display: flex;
   padding-left: 0;
+  margin-top: 50px;
+}
+
+.second-section-list .second-section-item + .second-section-item {
+  margin-left: 30px;
+}
+
+/* -------------------TEAM---------------- */
+.team {
+  background-color: #f5f4fa;
 }
 
 .team-heading {
@@ -188,7 +255,13 @@ img {
 }
 
 .team-list {
+  display: flex;
   padding-left: 0;
+  margin-top: 50px;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 30px;
 }
 
 .team-item-heading {
@@ -208,7 +281,7 @@ img {
 /* -------------------footer-------------------------- */
 
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .footer-logo {
@@ -232,7 +305,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-
 /* ---------------------portfolio.html-------------------- */
 
 .portfolio-button-item {
@@ -246,7 +318,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
 }
 
 .portfolio-heading {
