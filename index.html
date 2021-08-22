@@ -1,118 +1,201 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
+      <div class="container">
         <nav class="header-nav">
-        <a href="/" lang="en" class="logo"><span class="span-logo">Web</span>Studio</a>
-        <ul class="header-list list">
-            <li class="header-item"><a class="header-link link" href="">Студия</a></li>
-            <li class="header-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
-        </ul>
-        <div class="header-div">
+          <a href="/" lang="en" class="logo"><span class="span-logo">Web</span>Studio</a>
+
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-mail-tel list">
+          <li class="header-mail-tel-list">
             <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="header-mail-tel-list">
             <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div>
-    </div>
+          </li>
+        </ul>
+      </div>
     </header>
-    
+
     <!-- MAIN -->
     <main class="index-main">
-<section class="hero">
-    <h1 class="hero-heading heading">Эффективные решения для вашего бизнеса</h1>
-    <button class="hero-btn" type="button">Заказать услугу</button>
-</section>
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-heading heading">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
+      </section>
 
-<!-- first section -->
-<section class="first-section">
-    <h2 hidden>Скрытый заголовок</h2>
-    <ul class="first-section-list list">
-        <li class="first-section-item">
-            <h3 class="first-section-heading">Внимание к деталям</h3>
-            <p class="first-section-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-        </li>
-        <li class="first-section-item">
-            <h3 class="first-section-heading">Пунктуальность</h3>
-            <p class="first-section-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-        </li>
-        <li class="first-section-item">
-            <h3 class="first-section-heading">Планирование</h3>
-            <p class="first-section-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-        </li>
-        <li class="first-section-item">
-            <h3 class="first-section-heading">Современные технологии</h3>
-            <p class="first-section-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-    </ul>
-</section>
+      <!-- first section -->
 
-<!-- second section -->
-<section class="second-section">
-    <h2 class="second-section-heading heading">Чем мы занимаемся</h2>
-    <ul class="second-section-list list">
-        <li class="second-section-item">
-            <img src="./images/photos/box1.jpg" alt="руки програмиста клавиатура и планшет" width="370" height="294">
-        </li>
-        <li class="second-section-item">
-            <img src="./images/photos/box2.jpg" alt="руки дизайнера ноутбук и телефон в одной руке" width="370" height="294">
-        </li>
-        <li class="second-section-item">
-            <img src="./images/photos/box3.jpg" alt="планшет в руках" width="370" height="294">
-        </li>
-    </ul>
-</section>
+      <section class="first-section section">
+        <div class="container">
+          <h2 hidden>Скрытый заголовок</h2>
+          <ul class="first-section-list list">
+            <li class="first-section-item">
+              <h3 class="first-section-heading">Внимание к деталям</h3>
+              <p class="first-section-paragraph">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="first-section-item">
+              <h3 class="first-section-heading">Пунктуальность</h3>
+              <p class="first-section-paragraph">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="first-section-item">
+              <h3 class="first-section-heading">Планирование</h3>
+              <p class="first-section-paragraph">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="first-section-item">
+              <h3 class="first-section-heading">Современные технологии</h3>
+              <p class="first-section-paragraph">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<!-- team -->
-<section class="team">
-        <h2 class="team-heading heading">Наша команда</h2>
-        <ul class="team-list list">
+      <!-- second section -->
+
+      <section class="second-section section">
+        <div class="container">
+          <h2 class="second-section-heading heading">Чем мы занимаемся</h2>
+          <ul class="second-section-list list">
+            <li class="second-section-item">
+              <img
+                class="images"
+                src="./images/photos/box1.jpg"
+                alt="руки програмиста клавиатура и планшет"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="second-section-item">
+              <img
+                class="images"
+                src="./images/photos/box2.jpg"
+                alt="руки дизайнера ноутбук и телефон в одной руке"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="second-section-item">
+              <img
+                class="images"
+                src="./images/photos/box3.jpg"
+                alt="планшет в руках"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- team -->
+
+      <section class="team section">
+        <div class="container">
+          <h2 class="team-heading heading">Наша команда</h2>
+          <ul class="team-list list">
             <li class="team-item">
-                <img src="./images/team-photos/img1.jpg" alt="фото сотрудника" width="270" height="260">
-                <h3 class="team-item-heading">Игорь Демьяненко</h3>
-                <p class="team-item-paragraph" lang="en">Product Designer</p>
+              <img
+                src="./images/team-photos/img1.jpg"
+                alt="фото сотрудника"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-item-heading">Игорь Демьяненко</h3>
+              <p class="team-item-paragraph" lang="en">Product Designer</p>
             </li>
             <li class="team-item">
-                <img src="./images/team-photos/img2.jpg" alt="фото сотрудника" width="270" height="260">
-                <h3 class="team-item-heading">Ольга Репина</h3>
-                <p class="team-item-paragraph" lang="en">Frontend Developer</p>
+              <img
+                src="./images/team-photos/img2.jpg"
+                alt="фото сотрудника"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-item-heading">Ольга Репина</h3>
+              <p class="team-item-paragraph" lang="en">Frontend Developer</p>
             </li>
             <li class="team-item">
-                <img src="./images/team-photos/img3.jpg" alt="фото сотрудника" width="270" height="260">
-                <h3 class="team-item-heading">Николай Тарасов</h3>
-                <p class="team-item-paragraph" lang="en">Marketing</p>
+              <img
+                src="./images/team-photos/img3.jpg"
+                alt="фото сотрудника"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-item-heading">Николай Тарасов</h3>
+              <p class="team-item-paragraph" lang="en">Marketing</p>
             </li>
             <li class="team-item">
-                <img src="./images/team-photos/img4.jpg" alt="фото сотрудника" width="270" height="260">
-                <h3 class="team-item-heading">Михаил Ермаков</h3>
-                <p class="team-item-paragraph" lang="en">UI Designer</p>
+              <img
+                src="./images/team-photos/img4.jpg"
+                alt="фото сотрудника"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-item-heading">Михаил Ермаков</h3>
+              <p class="team-item-paragraph" lang="en">UI Designer</p>
             </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <a href="/" lang="en" class="footer-logo logo"><span class="span-logo">Web</span>Studio</a>
+        <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="footer-mail-tel">
+          <li>
+            <a class="footer-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="footer-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-    </section>
-</main>
-    
-<!-- FOOTER -->
-<footer class="footer">
-    <a href="/" lang="en" class="footer-logo logo"><span class="span-logo">Web</span>Studio</a>
-    <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-    <div class="footer-div">
-        <a class="footer-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="footer-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-    </div>
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
