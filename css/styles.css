@@ -75,6 +75,15 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   background-color: #f5f4fa;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 
 .heading {
@@ -113,7 +122,7 @@ img {
 
 .header-list {
   display: flex;
-  margin-left: 50px;
+  margin-left: 93px;
 }
 
 .header-item {
@@ -169,8 +178,8 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  height: 600px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-heading {
@@ -209,6 +218,10 @@ img {
 
 .benefits-list {
   display: flex;
+}
+
+.benefits-item {
+  width: 270px;
 }
 
 .benefits-item:not(:last-child) {
@@ -380,7 +393,6 @@ img {
 }
 
 .projects-list > .projects-item {
-  /* outline: 1px solid red; */
   flex-basis: calc(100% / 3 - var(--projects-list-gap));
 
   margin-top: var(--projects-list-gap);
