@@ -326,7 +326,7 @@ img {
 
 .map {
   display: inline-block;
-  padding-top: 20px;
+  margin-top: 20px;
 
   color: var(--primary-white-color);
   font-style: normal;
@@ -335,23 +335,18 @@ img {
   letter-spacing: 0.03em;
 }
 
+.footer-item {
+  margin-top: 9px;
+}
+
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.footer-mail {
-  display: inline-block;
-  padding-top: 9px;
-}
-
-.footer-tel {
-  display: inline-block;
-  padding-top: 9px;
 }
 
 /* ---------------------portfolio.html-------------------- */
@@ -362,7 +357,7 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filters-item:not(:last-child) {
